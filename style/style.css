@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        ". main main ."
+        ". main main ."
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    height: 10rem;
+    background-color: #F3E9D2;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-top: 18px;
+    margin-left: 112px;
+}
+
+.botonesInicio {
+    display: flex;
+    gap: 100px;
+    margin-right: 220px;
+    margin-top: 70px;
+}
+
+.botonesInicio a {
+    text-decoration: none;
+    color: black;
+}
+
+.botonesInicio a:hover {
+    color: rgba(128, 128, 128, 0.575);
+
+}
+
+.main {
+    grid-area: main;
+    padding: 100px;
+    margin-left: 214px;
+}
+
+.fraseYimagen {
+    display: flex;
+}
+
+.imagenPrimaria img {
+    width: 500px;
+    height: 500px;
+}
+
+.frasePrincipal {
+    width: 500px;
+    height: 500px;
+    font-size: 400%;
+    font-family: 'Dancing Script', cursive;
+    text-align: justify;
+}
+
+.imagenSecundaria img {
+    height: 500px;
+    width: 1000px;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #114B5F;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactoYcondiciones {
+    margin: 50px;
+    display: flex;
+    gap: 40px;
+    margin-left: 100px;
+}
+
+.contactoYcondiciones a:hover {
+    color: rgba(128, 128, 128, 0.575);
+}
+
+.redesSociales {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 100px;
+    gap: 40px;
+}
+
+.fraseProductos{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.productos{
+    display: flex;
+}
+
+.productos img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@media (max-width:425px) {
+    .grid {
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .imagenPrimaria {
+        display: none;
+    }
+
+    .logo img {
+        margin-left: 50px;
+    }
+
+
+    .botonesInicio {
+        margin-right: 0px;
+        gap: 30px;
+        margin-right: 100px;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .frasePrincipal {
+        height: 250px;
+        width: 700px;
+        margin-left: 30px;
+    }
+
+    .imagenSecundaria img {
+        width: 700px;
+        margin-left: 30px;
+    }
+}
+
