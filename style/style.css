@@ -18,11 +18,17 @@
     height: 10rem;
     background-color: #F3E9D2;
     justify-content: space-between;
+    background-image: linear-gradient(to left, grey, red);
 }
 
 .logo img {
     margin-top: 18px;
     margin-left: 112px;
+    transition: 2s;
+}
+
+.logo img :hover {
+    transform: scale(1.5);
 }
 
 .botonesInicio {
@@ -63,6 +69,8 @@
     font-size: 400%;
     font-family: 'Dancing Script', cursive;
     text-align: justify;
+    transform: scale(1);
+    transition: 3s;
 }
 
 .imagenSecundaria img {
@@ -76,6 +84,7 @@
     padding: 10px;
     justify-content: space-between;
     background-color: #114B5F;
+    background-image: linear-gradient(to left, red, grey);
 }
 
 .footer a {
@@ -101,17 +110,17 @@
     gap: 40px;
 }
 
-.fraseProductos{
+.fraseProductos {
     display: flex;
     padding: 50px;
     justify-content: center;
 }
 
-.productos{
+.productos {
     display: flex;
 }
 
-.productos img{
+.productos img {
     max-width: 500px;
     max-height: 500px;
 }
@@ -158,4 +167,3 @@
         margin-left: 30px;
     }
 }
-

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Joan&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
@@ -42,7 +43,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__backInUp">
         <span class="contactoYcondiciones">
             <a href="./contacto.html">CONTACTO</a>
             <a href="./termino-y-condiciones.html">TERMINO Y CONDICIONES</a>
@@ -55,6 +56,10 @@
         </span>
     </footer>
 
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
